@@ -15,7 +15,7 @@ class Startup
     end
 
     def >(startup)
-        self.funding > startup.funding
+        @funding > startup.funding
     end
 
     def hire(employee_name, title)
