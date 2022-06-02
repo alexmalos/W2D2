@@ -7,7 +7,7 @@ class Hotel
   end
 
   def name
-    @name.split.map { |word| word[0].upcase + word[1..-1] }.join(" ")
+    @name.split.map { |word| word.capitalize }.join(" ")
   end
   
   attr_reader :rooms
